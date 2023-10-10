@@ -1,3 +1,95 @@
+<style media='all' type='text/css'>
+.bwstoc {
+ margin: 10px 0;
+ background: #F0F0F0;
+ border: 1px solid #ddd;
+}
+.bwstoc ol, .bwstoc ul {
+ margin: 0 0 15px 20px;
+ padding: 0;
+}
+.bwstoc ul {
+ list-style: disc;
+}
+.bwstoc ol li, .bwstoc ul li {
+ font-size: 95%;
+ padding: 5px 10px 0 0;
+ margin: 0 0 0 30px;
+}
+.bwstoc a {
+ text-decoration: none;
+}
+.bwstoc a:hover {
+ text-decoration: underline;
+}
+.bwstoc .bwstocHeader {
+ font-weight: bold;
+ font-size: 100%;
+ position: relative;
+ outline: none;
+ border: none;
+ padding: 5px 15px 5px 5px;
+ margin: 5px 10px;
+}
+.bwstoc .bwstocHeader a {
+ text-decoration: none;
+ cursor: pointer;
+}
+.bwstoc .bwstocHeader a:hover {
+ text-decoration: underline;
+}
+</style>
+<!-- Blogger TOC -->
+<script type='text/javascript'>
+//<![CDATA[
+function bwstoc() {
+ var bwstoc = i = headinglength = getheading = 0;
+ headinglength = document.getElementById("post-toc").querySelectorAll("h2, h3, h4").length;
+ if (headinglength > 1) { 
+ // Hanya Tampil Jika Ditemukan Minimal 2 Heading
+ for (i = 0; i < headinglength; i++) {
+ getheading = document.getElementById("post-toc").querySelectorAll("h2, h3, h4")[i].textContent;
+ var bws_1 = getheading.replace(/[^a-z0-9]/gi," ");
+ var bws_2 = bws_1.trim();
+ var getHeadUri = bws_2.replace(/s/g, "_");
+ document.getElementById("post-toc").querySelectorAll("h2, h3, h4")[i].setAttribute("id", getHeadUri);
+ bwstoc = "<li><a href='#" + getHeadUri + "'>" + getheading + "</a></li>";
+ document.getElementById("bwstoc").innerHTML += bwstoc;
+ }
+ } else { document.write("<style>.bwstoc{display:none !important;visibility:hidden !important;width:0 !important;height:0 !important;}</style>"); }
+}
+function bwstocShow() {
+    var bwstocBtn = document.getElementById('bwstoc');
+ var bwstocWrapID = document.getElementById('bwstocwrap');
+ var bwstocLink = document.getElementById('bwstocLink');
+    if (bwstocBtn.style.display === 'none') {
+        bwstocBtn.style.display = 'block';
+ bwstocWrapID.style.display = 'block';
+ bwstocLink.innerHTML = 'Content :';
+ 
+    } else {
+        bwstocBtn.style.display = 'none';
+ bwstocWrapID.style.display = 'inline-block';
+ bwstocLink.innerHTML = 'Content :';
+    }
+}
+//]]>
+</script>
+<noscript><style media='all' type='text/css'>#bwstocwrap,.bwstoc{display:none !important;visibility:hidden !important;width:0 !important;height:0 !important;}</style></noscript>
+<br />
+<div id='post-toc'><br />
+
+
+
+<div id='bwstocwrap' class='bwstoc' style='display:inline-block;'><div class='bwstocHeader'><a id='bwstocLink' onclick='bwstocShow()'>Content :</a></div><ul id='bwstoc' style='display:none'></ul></div>
+
+
+<!--tuliskonten disini 🥰🥰🥰🥰🥰🥰 -->
+
+
+
+
+
 <div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXEmWjXLeT4akRWQML9Kjxdz8kcF5EIrnTT2lndg87VKwM0Xy5JHv0BvLUeNtBrNR5kNyvQ-qW5wIZpLk_0ggYFz75Y7F9SnZ-vbEyVdFAyIrdtNqDB2pExMhIkBJ76uUUsMBa_1mYdbSG-KnKKZGL04zBBr4565oWBoqvhw4BGNhEbbox7RSB6uhCFq81/s739/images.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="aov" border="0" data-original-height="415" data-original-width="739" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXEmWjXLeT4akRWQML9Kjxdz8kcF5EIrnTT2lndg87VKwM0Xy5JHv0BvLUeNtBrNR5kNyvQ-qW5wIZpLk_0ggYFz75Y7F9SnZ-vbEyVdFAyIrdtNqDB2pExMhIkBJ76uUUsMBa_1mYdbSG-KnKKZGL04zBBr4565oWBoqvhw4BGNhEbbox7RSB6uhCFq81/s16000/images.jpeg" title="aov" /></a></div>
 
 
@@ -32,6 +124,15 @@
 <h2>Rise to Victory: The Top Hero-Mages in Arena Of Valor</h2>
 <p>In conclusion, Tulen, Lauriel, Sephera, Ilumia, Liliana, and Raz stand out as the top hero-mages in Arena of Valor. Their unique abilities, outstanding damage output, and versatility make them the most powerful and influential characters in the game. As players harness their magical skills, they can rise to victory and dominate the battlefield with these exceptional hero-mages by their side.</p>
 <p>Arena of Valor continues to captivate players worldwide with its diverse cast of heroes and immersive gameplay. Among them, hero-mages shine as the most powerful and influential characters. With their mastery over magic and combat, hero-mages possess unparalleled power that can turn the tides of any battle. By choosing Tulen, Lauriel, Sephera, Ilumia, Liliana, or Raz, players can unleash the fury of spells and rise to victory in Arena of Valor.</p>
+
+
+
+<script>bwstoc();</script>
+</div>
+
+<div><br /></div><div><br /></div><div><a href="/" target="_blank">Home</a></div><div><br /></div><div><br /></div>
+
+
 
 
 
